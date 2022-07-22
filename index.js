@@ -18,4 +18,4 @@ const bubbleMaker = () => {
   bubble.style.setProperty("--left", Math.random() * 100 * plusMinus + "%");
 };
 
-bubbleMaker();
+setInterval(bubbleMaker, 1000);
