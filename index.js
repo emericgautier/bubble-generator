@@ -16,6 +16,10 @@ const bubbleMaker = () => {
 
   const plusMinus = Math.random() > 0.5 ? 1 : -1;
   bubble.style.setProperty("--left", Math.random() * 100 * plusMinus + "%");
+
+  setTimeout(() => {
+    bubble.remove();
+  }, 8000);
 };
 
 setInterval(bubbleMaker, 1000);
